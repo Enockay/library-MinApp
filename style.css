@@ -1,0 +1,117 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/** container containing everything**/
+.container{
+    display:grid;
+    grid-template: 0.1fr 1fr 0.1fr /15% 1fr 1fr;
+    grid-template-areas: "sidebar header header"
+                          "sidebar main main"
+                           "footer footer footer";
+    height: 100vh;
+    position: relative;
+}
+
+/** header section**/
+header{
+    grid-area: header;
+    background-color: rgb(172, 27, 128);
+    position: sticky;
+}
+/**heading part of the header**/
+.heading{
+    text-align: center;
+    color :rgb(0, 255, 13);
+}
+.heading>p{
+    color: beige;
+    font-style: italic;
+    font-size: 1rem;
+}
+.heading>h3{
+    color: rgb(90, 9, 167);
+}
+
+/**main section**/
+main{
+    grid-area: main;
+    background-color: rgb(52, 185, 81);
+}
+/**card container**/
+.card-container{
+    margin:1rem;
+    display:none;
+    grid-template-columns: repeat(4,22%);
+    grid-template-rows: repeat((5,1fr));
+    gap: 1rem;
+}
+/**h2 heading**/
+.class-container>h2{
+    margin-left: 1rem;
+    color: gold;
+    text-decoration: underline;
+}
+/** design the delete button**/
+.button{
+    background-color:red;
+    color: rgb(241, 240, 245);
+    font-size: 1.0rem;
+    border-radius: 0.5rem;
+}
+/**dom manipulated card**/
+.card{
+   
+    background-color: darkorchid;
+    border: 1px solid black;
+    border-radius: 0.9rem;
+    padding: 0.4rem;
+}
+.card>.p{
+    font-size: 1.2rem;
+    color: black;
+}
+.card>h3{
+    color:rgb(30, 210, 30)
+}
+.card>h2{
+    color :brown;
+}
+/**form**/
+#form{
+    display: none;
+    margin: 2rem;
+    padding: 0.9rem;
+    width: 20rem;
+    height: 40vh;
+    border: 1px solid red;
+    border-radius: 0.9rem;
+    background-color: chartreuse;
+}
+.form>input{
+    width:10rem;
+}
+
+/**sidebar**/
+.sidebar{
+    grid-area: sidebar;
+    background-color:darkslategray;
+    text-align: center;
+  
+}
+.min-sidebar>h3{
+    color: coral;
+}
+.min-sidebar>label{
+    color: rgb(31, 196, 53);
+}
+.min-sidebar+label+h3+button{
+    margin-left: 0.9rem;
+}
+footer{
+    grid-area: footer;
+    background-color:plum;
+}
+

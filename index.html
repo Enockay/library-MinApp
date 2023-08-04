@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library-miniApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!--header of the body-->
+        <header>
+            <div class="heading">
+                <h3>WELCOME TO CHUKA LIBRARY-MIN-APP</h3>
+                <h4>Here we say Education is Knowledge</h4>
+                <p>Take a look and go through some of the stored books you can even add some and if you
+                    admin you can delete feel free to explore
+                </p>
+            </div>
+        </header>
+        <!--end of the header of the body-->
+        <!--sidebar section-->
+        <div class="sidebar">
+            <div class="min-sidebar">
+                <br>
+                <h3>LIBRARY DASHBOARD</h3>
+                <hr><br><br>
+                <label for="Add">Wish to contribute </label><br>
+                <button id ="add-book">Add Book</button>
+                <br><br><br></b>
+                <hr><br><br><br>
+                <label for="display">Hover around the lib</label><br>
+                <button class="display-book">Show Books</button>
+                <br><br>
+                <hr><br><br><br>
+                <label for="remove"> remove outdated books check at the books information delete from</label>
+                <button class="remove">Remove One</button>
+                <br><br><br><br>
+                <hr>
+            </div>
+        </div>
+        <!--end of sidebar section-->
+        <!--main body section-->
+        <main>
+            <div id="form">
+                <form action="">
+                    <label for="title">Title :</label>
+                    <input type="text" id="title" name="title" required maxlength="8" minlength="6">
+                    <br>
+                    <hr>
+                    <label for="author">Author :</label>
+                    <input type="text" id="author" name="author" required maxlength="8" minlength="6">
+                    <br>
+                    <hr>
+                    <label for="author">Discription :</label>
+                    <input type="text" id="describe" name="author" required minlength="10">
+                    <br>
+                    <hr>
+                    <label for="pages">Pages :</label>
+                    <input type="number" id="pages" name="pages" required min="100">
+                    <br>
+                    <hr>
+                    <label for="author">have you read the book:</label>
+                    <input type="text" id="read" name="book-read" required>
+                    <br><br>
+                    <hr>
+                    <button id="submit">submit </button>
+                </form>
+            </div>
+            <div class="class-container">
+               <h2>welcome to the chuka library Mini-App you can view our books here enjoy yourself</h2>
+               <div class="card-container">
+
+               </div>
+            </div>
+        </main>
+        <!--end of the main body section-->
+
+        <!--footer section-->
+        <footer></footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
